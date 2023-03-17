@@ -115,10 +115,9 @@
         </div>
     </section>
     <!-- Banner Section End -->
-    <section class="banner spad" style="padding: 0 0 20px 0 ;    margin-bottom: 50px;">
+    <section class="banner spad" style="padding: 0 0 20px 0 ;margin-bottom: 10px;">
         <div class="container">
-            <div style="background-color:#fff ;height: 30px ;font-size: 35px;text-align: center">
-                تواصل معنا
+            <div style="background-color:#fff ;height: 30px ;font-size: 20px;text-align: center">
                 <br>
                 <a style="color: #000" href="{{$user->insta_url}}" target="_blank">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -126,7 +125,7 @@
                 <a style="color: #000;" href="{{$user->tiktok_url}}" target="_blank">
                     <i class="fab fa-tiktok" aria-hidden="true"></i>
                 </a>
-                <a style="color: #36e54d"
+                <a style="color: #000"
                    href="https://wa.me/02{{$user->whats_app_number}}/?text={{$user->whats_app_message}}"
                    target="_blank">
                     <i class="fa fa-whatsapp" aria-hidden="true"></i>

@@ -80,13 +80,6 @@ p {
 	line-height: 25px;
 	margin: 0 0 15px 0;
 }
-.fa.fa-instagram {
-    color: transparent;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background-clip: text;
-    -webkit-background-clip: text;
-}
 img {
 	max-width: 100%;
 }
@@ -143,8 +136,8 @@ ol {
 }
 
 .spad {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .text-white h1,
@@ -678,10 +671,10 @@ ol {
 	overflow: hidden;
 }
 
-.banner__item:hover .banner__item__text a:after {
-	width: 40px;
-	background: #e53637;
-}
+/*.banner__item:hover .banner__item__text a:after {*/
+/*	width: 40px;*/
+/*	background: #e53637;*/
+/*}*/
 
 .banner__item.banner__item--middle {
 	margin-top: -75px;
@@ -727,22 +720,24 @@ ol {
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding: 3px 0;
+	padding: 7px;
 	position: relative;
+    border: 2px solid #b1b1b1;
+    border-radius: 5px;
 }
 
-.banner__item__text a:after {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 2px;
-	background: #111111;
-	content: "";
-	-webkit-transition: all, 0.3s;
-	-o-transition: all, 0.3s;
-	transition: all, 0.3s;
-}
+/*.banner__item__text a:after {*/
+/*	position: absolute;*/
+/*	left: 0;*/
+/*	bottom: 0;*/
+/*	width: 100%;*/
+/*	height: 2px;*/
+/*	background: #111111;*/
+/*	content: "";*/
+/*	-webkit-transition: all, 0.3s;*/
+/*	-o-transition: all, 0.3s;*/
+/*	transition: all, 0.3s;*/
+/*}*/
 
 /*---------------------
   Categories
@@ -3682,7 +3677,7 @@ ol {
 		margin-bottom: 40px;
 	}
 	.banner {
-		padding-bottom: 60px;
+		padding-bottom: 20px;
 	}
 	.banner__item__pic {
 		float: none;
@@ -3695,6 +3690,7 @@ ol {
 		position: relative;
 		top: 0;
 		padding-top: 22px;
+        text-align: center;
 	}
 	.filter__controls li {
 		margin-right: 15px;
