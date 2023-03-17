@@ -73,14 +73,20 @@ h6 {
 }
 
 p {
-	font-size: 15px;
+	font-size: 20px;
 	/*font-family: "Nunito Sans", sans-serif;*/
 	color: #3d3d3d;
 	font-weight: 400;
 	line-height: 25px;
 	margin: 0 0 15px 0;
 }
-
+.fa.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 img {
 	max-width: 100%;
 }
@@ -718,9 +724,8 @@ ol {
 .banner__item__text a {
 	display: inline-block;
 	color: #111111;
-	font-size: 13px;
+	font-size: 20px;
 	font-weight: 700;
-	letter-spacing: 4px;
 	text-transform: uppercase;
 	padding: 3px 0;
 	position: relative;
@@ -1936,7 +1941,8 @@ ol {
 -----------------------*/
 
 .footer {
-	background: #111111;
+    padding: 30px 0;
+    background: #111111;
 }
 
 .footer__about {
@@ -2038,7 +2044,7 @@ ol {
 }
 
 .footer__copyright__text p i {
-	color: #e53637;
+	color: #36e54d;
 }
 
 .footer__copyright__text p a {

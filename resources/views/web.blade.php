@@ -12,8 +12,8 @@
                             <a style="color: #ffffff"
                                href="https://wa.me/02{{$user->whats_app_number}}/?text={{$user->whats_app_message}}"
                                target="_blank">
-                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                يمكنكم التواصل معنا من خلال الواتساب
+                                <i class="fa fa-whatsapp " aria-hidden="true"></i>
+                                يمكنكم التواصل معنا من خلال الواتساب بالضغط هنا
                             </a>
 
                         </p>
@@ -41,12 +41,18 @@
                                 <div class="banner__item__text">
                                         <?php
                                         $url = "https://wa.me/02" . $user->whats_app_number . "/?text=" . $user->whats_app_message;
+                                        $icon = true;
                                         if (!empty($row->url)) {
                                             $url = $row->url;
+                                            $icon = false;
                                         }
                                         ?>
+                                    <h2>{{$row->title}}</h2>
                                     <a target="_blank" href="{{$url}}">
-                                        <h2>{{$row->title}}</h2>
+                                        @if($icon)
+                                            <i style="color: #36e54d" class="fa fa-whatsapp" aria-hidden="true"></i>
+                                        @endif
+                                        تواصل معنا
                                     </a>
                                 </div>
                             </div>
@@ -60,12 +66,18 @@
                                 <div class="banner__item__text">
                                         <?php
                                         $url = "https://wa.me/02" . $user->whats_app_number . "/?text=" . $user->whats_app_message;
+                                        $icon = true;
                                         if (!empty($row->url)) {
                                             $url = $row->url;
+                                            $icon = false;
                                         }
                                         ?>
+                                    <h2>{{$row->title}}</h2>
                                     <a target="_blank" href="{{$url}}">
-                                        <h2>{{$row->title}}</h2>
+                                        @if($icon)
+                                            <i style="color: #36e54d" class="fa fa-whatsapp" aria-hidden="true"></i>
+                                        @endif
+                                        تواصل معنا
                                     </a>
                                 </div>
                             </div>
@@ -79,12 +91,19 @@
                                 <div class="banner__item__text">
                                         <?php
                                         $url = "https://wa.me/02" . $user->whats_app_number . "/?text=" . $user->whats_app_message;
+                                        $icon = true;
                                         if (!empty($row->url)) {
                                             $url = $row->url;
+                                            $icon = false;
                                         }
                                         ?>
+                                    <h2>{{$row->title}}</h2>
                                     <a target="_blank" href="{{$url}}">
-                                        <h2>{{$row->title}}</h2>
+                                        @if($icon)
+                                            <i style="color: #36e54d" class="fa fa-whatsapp" aria-hidden="true"></i>
+                                        @endif
+                                        تواصل معنا
+
                                     </a>
                                 </div>
                             </div>
@@ -92,44 +111,22 @@
                     @endif
                         <?php $i++ ?>
                 @endforeach
-
-
-                {{--                <div class="col-lg-5">--}}
-                {{--                    <div class="banner__item banner__item--middle">--}}
-                {{--                        <div class="banner__item__pic">--}}
-                {{--                            <img src="/assets/img/banner/banner-2.jpg" alt="">--}}
-                {{--                        </div>--}}
-                {{--                        <div class="banner__item__text">--}}
-                {{--                            <h2>Accessories</h2>--}}
-                {{--                            <a href="#">Shop now</a>--}}
-                {{--                        </div>--}}
-                {{--                    </div>--}}
-                {{--                </div>--}}
-                {{--                <div class="col-lg-7">--}}
-                {{--                    <div class="banner__item banner__item--last">--}}
-                {{--                        <div class="banner__item__pic">--}}
-                {{--                            <img src="/assets/img/banner/banner-3.jpg" alt="">--}}
-                {{--                        </div>--}}
-                {{--                        <div class="banner__item__text">--}}
-                {{--                            <h2>Shoes Spring 2030</h2>--}}
-                {{--                            <a href="#">Shop now</a>--}}
-                {{--                        </div>--}}
-                {{--                    </div>--}}
-                {{--                </div>--}}
             </div>
         </div>
     </section>
     <!-- Banner Section End -->
-    <section class="banner spad" style="padding: 0 0 20px 0 ">
+    <section class="banner spad" style="padding: 0 0 20px 0 ;    margin-bottom: 50px;">
         <div class="container">
             <div style="background-color:#fff ;height: 30px ;font-size: 35px;text-align: center">
+                تواصل معنا
+                <br>
                 <a style="color: #000" href="{{$user->insta_url}}" target="_blank">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
-                <a style="color: #000" href="{{$user->tiktok_url}}" target="_blank">
+                <a style="color: #000;" href="{{$user->tiktok_url}}" target="_blank">
                     <i class="fab fa-tiktok" aria-hidden="true"></i>
                 </a>
-                <a style="color: #000"
+                <a style="color: #36e54d"
                    href="https://wa.me/02{{$user->whats_app_number}}/?text={{$user->whats_app_message}}"
                    target="_blank">
                     <i class="fa fa-whatsapp" aria-hidden="true"></i>
@@ -149,8 +146,8 @@
                             <a style="color: #ffffff"
                                href="https://wa.me/02{{$user->whats_app_number}}/?text={{$user->whats_app_message}}"
                                target="_blank">
-                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                يمكنكم التواصل معنا من خلال الواتساب
+                                <i class="fa fa-whatsapp " aria-hidden="true"></i>
+                                يمكنكم التواصل معنا من خلال الواتساب بالضغط هنا
                             </a>
 
                         </p>
