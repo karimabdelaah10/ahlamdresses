@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{env('APP_NAME')}}</title>
     <link rel="icon" type="image/x-icon" href="/assets/img/logo.jpg">
-    <meta property="og:image" content="/assets/img/mainSiteImage.jpg" />
+    <meta property="og:image" content="{{url('assets/img/mainSiteImage.jpg')}}" />
     <meta property="og:image:type" content="image/jpg">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
