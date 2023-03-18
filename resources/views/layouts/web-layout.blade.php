@@ -10,7 +10,9 @@
     <title>{{env('APP_NAME')}}</title>
     <link rel="icon" type="image/x-icon" href="/assets/img/logo.jpg">
     <meta property="og:image" content="/assets/img/mainSiteImage.jpg" />
-
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
           rel="stylesheet">
