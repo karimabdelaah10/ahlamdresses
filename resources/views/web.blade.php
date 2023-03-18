@@ -42,10 +42,10 @@
                                         $url = "https://wa.me/" . $user->whats_app_number . "/?text=" . $user->whats_app_message;
                                         $icon = true;
                                         $linkQut = 'تواصل معنا';
-                                        $linkQut = 'للمزيد';
                                         if (!empty($row->url)) {
                                             $url = $row->url;
                                             $icon = false;
+                                            $linkQut = 'للمزيد';
                                         }
                                         ?>
                                     <h2>{{$row->title}}</h2>
