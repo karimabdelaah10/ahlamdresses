@@ -20,6 +20,7 @@ class ProfileUpdateRequest extends FormRequest
             'email' => ['email', 'max:255', Rule::unique(User::class)->ignore($this->user()->id)],
             'whats_app_number' => ['required'],
             'whats_app_message' => ['required'],
+            'header_footer_qut' => ['required'],
             'tiktok_url' => ['required'],
             'insta_url' => ['required'],
         ];

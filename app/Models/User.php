@@ -23,6 +23,7 @@ class User extends Authenticatable
         'password',
         'whats_app_number',
         'whats_app_message',
+        'header_footer_qut',
         'tiktok_url',
         'insta_url',
     ];

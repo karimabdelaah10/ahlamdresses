@@ -16,12 +16,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [WebHomeController::class,'index']);
+Route::get('/', [WebHomeController::class, 'index']);
 
-Route::get('/dashboard',[MediaController::class ,'index'])->middleware(['auth'])->name('dashboard');
-Route::get('/dashboard/create',[MediaController::class ,'getCreate'])->middleware(['auth'])->name('get.createMedia');
-Route::post('/dashboard/create',[MediaController::class ,'postCreate'])->middleware(['auth'])->name('post.createMedia');
-Route::get('/dashboard/create/delete/{id}',[MediaController::class ,'delete'])->middleware(['auth'])->name('delete');
+Route::get('/dashboard', [MediaController::class, 'index'])->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard/create', [MediaController::class, 'getCreate'])->middleware(['auth'])->name('get.createMedia');
+Route::post('/dashboard/create', [MediaController::class, 'postCreate'])->middleware(['auth'])->name('post.createMedia');
+Route::get('/dashboard/edit/{id}', [MediaController::class, 'getUpdate'])->middleware(['auth'])->name('get.updateMedia');
+Route::post('/dashboard/edit/{id}', [MediaController::class, 'postUpdate'])->middleware(['auth'])->name('post.updateMedia');
+Route::get('/dashboard/create/delete/{id}', [MediaController::class, 'delete'])->middleware(['auth'])->name('delete');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -29,4 +31,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

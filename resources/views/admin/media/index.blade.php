@@ -19,9 +19,9 @@
                             <thead>
                             <tr>
                                 <th style="width: 10%">*</th>
-                                <th style="width: 30%">Media Title</th>
+                                <th style="width: 20%">Media Title</th>
                                 <th style="width: 40%">Media</th>
-                                <th style="width: 40%">Media Type</th>
+                                <th style="width: 10%">Media Type</th>
                                 <th style="width: 20%">Actions</th>
                             </tr>
                             </thead>
@@ -38,7 +38,12 @@
                                         @endif
                                     </td>
                                     <td style="text-align: center">{{$row->type}}</td>
-                                    <td>
+                                    <td >
+                                        <a class='inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150'
+                                           style="margin-bottom: 20px"
+                                           href="{{route('get.updateMedia',$row->id)}}">
+                                            Update
+                                        </a>
                                         <a class='inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150'
                                            style="margin-bottom: 20px"
                                            href="{{route('delete',$row->id)}}">

@@ -42,6 +42,24 @@ class MediaController extends Controller
         return redirect(route('dashboard'));
     }
 
+    public function getUpdate($id)
+    {
+        $data['types'] = S3Enums::getAvialableTypes();
+        $data['row']=Media::query()->find($id);
+        return view('admin.media.edit', $data);
+    }
+    public function postUpdate(Request $request,$id)
+    {
+        $this->validate($request, [
+            'title'=>'max:30',
+            'path' => 'dimensions:min_width=440,min_height=440'
+        ]);
+        $data = $request->all();
+        $row =  Media::query()->find($id);
+        $row->update($data);
+        return redirect(route('dashboard'));
+    }
+
     public function delete($id)
     {
         Media::query()->find($id)->delete();

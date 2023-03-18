@@ -43,6 +43,12 @@
             <x-input-error class="mt-2" :messages="$errors->get('whats_app_message')" />
         </div>
 
+        <div>
+            <x-input-label for="header_footer_qut" :value="__('Header Footer Quotation')" />
+            <x-text-input id="header_footer_qut" name="header_footer_qut" type="text" class="mt-1 block w-full" :value="old('header_footer_qut', $user->header_footer_qut)" required />
+            <x-input-error class="mt-2" :messages="$errors->get('header_footer_qut')" />
+        </div>
+
 
         <div>
             <x-input-label for="tiktok_url" :value="__('Tiktok Url')" />

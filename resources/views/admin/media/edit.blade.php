@@ -10,11 +10,11 @@
                 <div class="p-6 text-gray-900">
                     <header>
                         <h2 class="text-lg font-medium text-gray-900">
-                            Create New Media
+                            Update Media
                         </h2>
                         <p class="mt-1 text-sm text-gray-600"></p>
                     </header>
-                    <form id="create-media" method="post" action="{{ route('post.createMedia') }}" enctype="multipart/form-data"
+                    <form id="create-media" method="post" action="{{ route('post.updateMedia',$row->id) }}" enctype="multipart/form-data"
                           class="mt-6 space-y-6">
                         @csrf
 
@@ -26,6 +26,7 @@
                                     name="title"
                                     type="text" placeholder="Media Title"
                                     max="20"
+                                    value="{{$row->title}}"
                                     required
                                     autofocus>
                                 <x-input-error class="mt-2" :messages="$errors->get('Title')" />
@@ -33,14 +34,14 @@
                             </label>
 
                         </div>
-                        <div  style="display: none">
+                        <div style="display: none">
                             <label class='block font-medium text-sm text-gray-700'>
                                 TYPE
                                 <select name="type" required
                                         class="mt-1 block w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">
                                     @foreach($types as $type)
                                         <option value="{{\App\Http\Enums\S3Enums::IMAGE}}" selected>Image</option>
-                                        <option value="{{$type}}">{{$type}}</option>
+{{--                                        <option value="{{$type}}">{{$type}}</option>--}}
                                     @endforeach
                                 </select>
                             </label>
@@ -50,13 +51,14 @@
                             <label class='block font-medium text-sm text-gray-700'>
                                 Media ( 440 * 440 )
                                 <input
-                                    required
                                     class='mt-1 block w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm'
                                     name="path"
                                     type="file"
                                     placeholder="Media"
                                     autofocus>
                                 <x-input-error class="mt-2" :messages="$errors->get('path')" />
+                                {!! viewImage($row->path , 'large') !!}
+
                             </label>
 
                         </div>
@@ -67,6 +69,7 @@
                                     class='mt-1 block w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm'
                                     name="url"
                                     type="text" placeholder="Media URL"
+                                    value="{{$row->url}}"
                                     autofocus>
                             </label>
 

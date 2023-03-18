@@ -12,7 +12,7 @@
                                href="https://wa.me/{{$user->whats_app_number}}/?text={{$user->whats_app_message}}"
                                target="_blank">
                                 <i class="fa fa-whatsapp " aria-hidden="true"></i>
-                                يمكنكم التواصل معنا من خلال الواتساب بالضغط هنا
+                                {{$user->header_footer_qut ?? ''}}
                             </a>
 
                         </p>
@@ -41,6 +41,8 @@
                                         <?php
                                         $url = "https://wa.me/" . $user->whats_app_number . "/?text=" . $user->whats_app_message;
                                         $icon = true;
+                                        $linkQut = 'تواصل معنا';
+                                        $linkQut = 'للمزيد';
                                         if (!empty($row->url)) {
                                             $url = $row->url;
                                             $icon = false;
@@ -51,7 +53,7 @@
                                         @if($icon)
                                             <i style="color: #36e54d" class="fa fa-whatsapp" aria-hidden="true"></i>
                                         @endif
-                                        تواصل معنا
+                                            {{$linkQut}}
                                     </a>
                                 </div>
                             </div>
@@ -66,9 +68,11 @@
                                         <?php
                                         $url = "https://wa.me/" . $user->whats_app_number . "/?text=" . $user->whats_app_message;
                                         $icon = true;
+                                        $linkQut = 'تواصل معنا';
                                         if (!empty($row->url)) {
                                             $url = $row->url;
                                             $icon = false;
+                                            $linkQut = 'للمزيد';
                                         }
                                         ?>
                                     <h2>{{$row->title}}</h2>
@@ -76,7 +80,7 @@
                                         @if($icon)
                                             <i style="color: #36e54d" class="fa fa-whatsapp" aria-hidden="true"></i>
                                         @endif
-                                        تواصل معنا
+                                            {{$linkQut}}
                                     </a>
                                 </div>
                             </div>
@@ -91,9 +95,11 @@
                                         <?php
                                         $url = "https://wa.me/" . $user->whats_app_number . "/?text=" . $user->whats_app_message;
                                         $icon = true;
+                                        $linkQut = 'تواصل معنا';
                                         if (!empty($row->url)) {
                                             $url = $row->url;
                                             $icon = false;
+                                            $linkQut = 'للمزيد';
                                         }
                                         ?>
                                     <h2>{{$row->title}}</h2>
@@ -101,7 +107,7 @@
                                         @if($icon)
                                             <i style="color: #36e54d" class="fa fa-whatsapp" aria-hidden="true"></i>
                                         @endif
-                                        تواصل معنا
+                                        {{$linkQut}}
 
                                     </a>
                                 </div>
@@ -144,7 +150,7 @@
                                href="https://wa.me/{{$user->whats_app_number}}/?text={{$user->whats_app_message}}"
                                target="_blank">
                                 <i class="fa fa-whatsapp " aria-hidden="true"></i>
-                                يمكنكم التواصل معنا من خلال الواتساب بالضغط هنا
+                                {{$user->header_footer_qut ?? ''}}
                             </a>
 
                         </p>
