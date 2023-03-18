@@ -10,10 +10,10 @@
     <title>{{env('APP_NAME')}}</title>
     <link rel="icon" type="image/x-icon" href="/assets/img/logo.jpg">
 
-    <meta property="og:site_name" content="San Roque 2014 Pollos">
-    <meta property="og:title" content="San Roque 2014 Pollos" />
-    <meta property="og:description" content="Programa de fiestas" />
-    <meta property="og:image" itemprop="image" content="http://pollosweb.wesped.es/programa_pollos/play.png">
+    <meta property="og:site_name" content="Ahlam Adresses">
+    <meta property="og:title" content="Ahlam Adresses" />
+    <meta property="og:description" content="Ahlam Adresses" />
+    <meta property="og:image" itemprop="image" content="{{url('assets/img/mainSiteImage.jpg')}}">
     <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="1440432930" />
 
