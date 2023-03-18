@@ -28,7 +28,7 @@ class MediaController extends Controller
     {
 
         $this->validate($request, [
-            'title'=>'max:20',
+            'title'=>'max:30',
             'path' => 'dimensions:min_width=440,min_height=440'
         ]);
         $data = $request->all();

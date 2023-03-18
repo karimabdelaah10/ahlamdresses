@@ -7,10 +7,9 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="footer__copyright__text">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         <p>
                             <a style="color: #ffffff"
-                               href="https://wa.me/02{{$user->whats_app_number}}/?text={{$user->whats_app_message}}"
+                               href="https://wa.me/{{$user->whats_app_number}}/?text={{$user->whats_app_message}}"
                                target="_blank">
                                 <i class="fa fa-whatsapp " aria-hidden="true"></i>
                                 يمكنكم التواصل معنا من خلال الواتساب بالضغط هنا
@@ -40,7 +39,7 @@
                                 </div>
                                 <div class="banner__item__text">
                                         <?php
-                                        $url = "https://wa.me/02" . $user->whats_app_number . "/?text=" . $user->whats_app_message;
+                                        $url = "https://wa.me/" . $user->whats_app_number . "/?text=" . $user->whats_app_message;
                                         $icon = true;
                                         if (!empty($row->url)) {
                                             $url = $row->url;
@@ -65,7 +64,7 @@
                                 </div>
                                 <div class="banner__item__text">
                                         <?php
-                                        $url = "https://wa.me/02" . $user->whats_app_number . "/?text=" . $user->whats_app_message;
+                                        $url = "https://wa.me/" . $user->whats_app_number . "/?text=" . $user->whats_app_message;
                                         $icon = true;
                                         if (!empty($row->url)) {
                                             $url = $row->url;
@@ -90,7 +89,7 @@
                                 </div>
                                 <div class="banner__item__text">
                                         <?php
-                                        $url = "https://wa.me/02" . $user->whats_app_number . "/?text=" . $user->whats_app_message;
+                                        $url = "https://wa.me/" . $user->whats_app_number . "/?text=" . $user->whats_app_message;
                                         $icon = true;
                                         if (!empty($row->url)) {
                                             $url = $row->url;
@@ -126,7 +125,7 @@
                     <i class="fab fa-tiktok" aria-hidden="true"></i>
                 </a>
                 <a style="color: #000"
-                   href="https://wa.me/02{{$user->whats_app_number}}/?text={{$user->whats_app_message}}"
+                   href="https://wa.me/{{$user->whats_app_number}}/?text={{$user->whats_app_message}}"
                    target="_blank">
                     <i class="fa fa-whatsapp" aria-hidden="true"></i>
                 </a>
@@ -140,10 +139,9 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="footer__copyright__text">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         <p>
                             <a style="color: #ffffff"
-                               href="https://wa.me/02{{$user->whats_app_number}}/?text={{$user->whats_app_message}}"
+                               href="https://wa.me/{{$user->whats_app_number}}/?text={{$user->whats_app_message}}"
                                target="_blank">
                                 <i class="fa fa-whatsapp " aria-hidden="true"></i>
                                 يمكنكم التواصل معنا من خلال الواتساب بالضغط هنا
