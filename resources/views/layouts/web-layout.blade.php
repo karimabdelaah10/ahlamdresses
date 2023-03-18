@@ -9,10 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{env('APP_NAME')}}</title>
     <link rel="icon" type="image/x-icon" href="/assets/img/logo.jpg">
-    <meta property="twitter:image" content="{{url('assets/img/mainSiteImage.jpg')}}" />
-    <meta property="twitter:image:type" content="image/jpg">
-    <meta property="twitter:image:width" content="1024">
-    <meta property="twitter:image:height" content="1024">
+
+    <meta property="og:site_name" content="San Roque 2014 Pollos">
+    <meta property="og:title" content="San Roque 2014 Pollos" />
+    <meta property="og:description" content="Programa de fiestas" />
+    <meta property="og:image" itemprop="image" content="http://pollosweb.wesped.es/programa_pollos/play.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:updated_time" content="1440432930" />
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
           rel="stylesheet">
