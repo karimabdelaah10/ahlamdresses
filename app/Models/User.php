@@ -26,6 +26,8 @@ class User extends Authenticatable
         'header_footer_qut',
         'tiktok_url',
         'insta_url',
+        'youtube_vid_url',
+        'quotation_txt'
     ];
 
     /**

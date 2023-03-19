@@ -53,7 +53,7 @@
                                         @if($icon)
                                             <i style="color: #36e54d" class="fa fa-whatsapp" aria-hidden="true"></i>
                                         @endif
-                                            {{$linkQut}}
+                                        {{$linkQut}}
                                     </a>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@
                                         @if($icon)
                                             <i style="color: #36e54d" class="fa fa-whatsapp" aria-hidden="true"></i>
                                         @endif
-                                            {{$linkQut}}
+                                        {{$linkQut}}
                                     </a>
                                 </div>
                             </div>
@@ -116,6 +116,53 @@
                     @endif
                         <?php $i++ ?>
                 @endforeach
+            </div>
+        </div>
+    </section>
+    <section class="testimonial">
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    @if($user->youtube_vid_url)
+                        class="col-lg-6 p-0"
+                @else
+                    class="col-lg-12 p-0"
+                    @endif
+                >
+                    <div class="testimonial__text">
+                        <span class="icon_quotations"></span>
+                        <p>“
+                            هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر
+                            إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما،
+                            عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص.
+                            بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم
+                            إيبسوم نفسه عدة مرات بما تتطلبه الحاجة.”
+                        </p>
+                        <div class="testimonial__author">
+                            <div class="testimonial__author__pic">
+                                <img src="/assets/img/logo.jpg" alt="">
+                            </div>
+                            <div class="testimonial__author__text">
+                                <h5>أحلام رزق الله</h5>
+                                <p>مصممة أزياء</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @if($user->youtube_vid_url)
+                    <div class="col-lg-6 p-0">
+                        <div class="testimonial__pic set-bg" style="">
+                            <iframe width="100%" height="100%"
+                                    src="{{$user->youtube_vid_url}}"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+
+                            </iframe>
+                        </div>
+                    </div>
+                @endif
             </div>
         </div>
     </section>

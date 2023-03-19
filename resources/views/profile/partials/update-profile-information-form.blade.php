@@ -31,6 +31,19 @@
 
 
         <div>
+            <x-input-label for="youtube_vid_url" :value="__('Youtube Vid Url')" />
+            <x-text-input id="youtube_vid_url" name="youtube_vid_url" type="text" class="mt-1 block w-full" :value="old('youtube_vid_url', $user->youtube_vid_url)" required autocomplete="youtube_vid_url" />
+            <x-input-error class="mt-2" :messages="$errors->get('youtube_vid_url')" />
+        </div>
+
+
+        <div>
+            <x-input-label for="quotation_txt" :value="__('Quotation Txt')" />
+            <x-text-input id="quotation_txt" name="quotation_txt" type="text" class="mt-1 block w-full" :value="old('quotation_txt', $user->quotation_txt)" required autocomplete="quotation_txt" />
+            <x-input-error class="mt-2" :messages="$errors->get('quotation_txt')" />
+        </div>
+
+        <div>
             <x-input-label for="whats_app_number" :value="__('Whats App Number')" />
             <x-text-input id="whats_app_number" name="whats_app_number" type="text" class="mt-1 block w-full" :value="old('whats_app_number', $user->whats_app_number)" required />
             <x-input-error class="mt-2" :messages="$errors->get('whats_app_number')" />
