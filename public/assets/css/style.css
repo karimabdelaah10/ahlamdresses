@@ -705,6 +705,7 @@ ol {
 	position: absolute;
 	left: 0;
 	top: 140px;
+    text-align: center;
 }
 
 .banner__item__text h2 {
